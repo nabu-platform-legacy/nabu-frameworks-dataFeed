@@ -1,0 +1,3 @@
+<structure name="dataFeed" superType="nabu.frameworks.dataFeed.database.types.dataFeed">
+    <structure definition="nabu.web.core.manage.reflection.service.serviceProperty" maxOccurs="unbounded" minOccurs="0" name="fields"/>
+</structure>

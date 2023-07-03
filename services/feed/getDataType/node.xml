@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<node artifactManager="be.nabu.eai.module.services.vm.VMServiceManager" created="2023-07-03T11:19:48.031+02:00" lastModified="2023-07-03T11:30:09.845+02:00" leaf="true" version="15">
+    <environmentId>apollo</environmentId>
+    <hidden>false</hidden>
+    <locked>false</locked>
+    <properties/>
+    <references>nabu.frameworks.dataFeed.specs.feedDataType</references>
+    <references>nabu.utils.types.ParameterDescription</references>
+    <references>java.util.UUID</references>
+    <references>nabu.frameworks.dataFeed.crud.dataFeed.types.output</references>
+    <references>nabu.utils.reflection.Type.describe</references>
+    <references>nabu.web.core.manage.reflection.propertyList</references>
+    <references>nabu.utils.reflection.Service.listImplementations</references>
+    <references>java.lang.Object</references>
+    <references>java.lang.String</references>
+    <references>nabu.utils.types.NodeDescription</references>
+    <references>nabu.data.json.Services.unmarshal</references>
+    <references>nabu.utils.Properties.toObject</references>
+    <references>nabu.frameworks.dataFeed.crud.dataFeed.services.get</references>
+</node>

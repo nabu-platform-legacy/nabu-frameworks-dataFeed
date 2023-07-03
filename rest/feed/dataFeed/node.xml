@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<node artifactManager="be.nabu.eai.module.types.structure.StructureManager" created="2023-07-03T09:54:06.550+02:00" lastModified="2023-07-03T09:54:58.061+02:00" leaf="true" version="3">
+    <environmentId>apollo</environmentId>
+    <hidden>false</hidden>
+    <locked>false</locked>
+    <properties/>
+    <references>nabu.frameworks.dataFeed.database.types.dataFeed</references>
+    <references>nabu.web.core.manage.reflection.service.serviceProperty</references>
+</node>

@@ -2,8 +2,8 @@
     <field name="id" pattern="[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}|[0-9a-fA-F]{32}" primaryKey="true" type="java.util.UUID"/>
     <field name="name" type="java.lang.String"/>
     <field comment="You can group data feeds together for combined display" minOccurs="0" name="groupName" type="java.lang.String"/>
-    <field comment="&quot;point&quot;, &quot;series&quot;, &quot;matrix&quot;,.." name="type" type="java.lang.String"/>
-    <field comment="Service that implements a spec depending on the type" minOccurs="0" name="dataProviderId" type="java.lang.String"/>
+    <field comment="&quot;point&quot;, &quot;series&quot;, &quot;matrix&quot;,.." minOccurs="0" name="type" type="java.lang.String"/>
+    <field comment="Service that implements a spec depending on the type" name="dataProviderId" type="java.lang.String"/>
     <field comment="The data type of this feed" minOccurs="0" name="dataType" type="java.lang.String"/>
     <field comment="If you want to store the data instead of calculating it realtime, set a refresh interval" minOccurs="0" name="refreshInterval" type="be.nabu.libs.types.base.Duration"/>
     <field comment="For series and matrices, it can be relevant to order the result set" minOccurs="0" name="orderBy" type="java.lang.String"/>

@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <restInterface>
     <method>GET</method>
-    <path>/dataFeed/{dataFeedId}/data</path>
+    <path>/dataFeed</path>
+    <queryParameters>q, limit, offset, orderBy</queryParameters>
     <role>$user</role>
-    <permissionAction>dataFeed.get</permissionAction>
+    <permissionAction>dataFeed.list</permissionAction>
     <useServiceContextAsPermissionContext>false</useServiceContextAsPermissionContext>
     <useWebApplicationAsPermissionContext>false</useWebApplicationAsPermissionContext>
     <useProjectAsPermissionContext>false</useProjectAsPermissionContext>
     <useGlobalPermissionContext>true</useGlobalPermissionContext>
-    <output>nabu.frameworks.dataFeed.rest.feed.dataPointList</output>
+    <output>nabu.frameworks.dataFeed.rest.feed.dataFeedList</output>
     <lenient>true</lenient>
     <webApplicationId>false</webApplicationId>
     <geoPosition>false</geoPosition>

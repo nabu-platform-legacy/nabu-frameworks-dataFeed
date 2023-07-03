@@ -1,0 +1,6 @@
+<structure interface="nabu.frameworks.dataFeed.manage.dataFeed.merge:api" name="pipeline">
+    <structure name="input"/>
+    <structure name="output"/>
+    <structure definition="nabu.web.core.manage.reflection.propertyList" name="list"/>
+    <structure collectionName="dataFeeds" definition="nabu.frameworks.dataFeed.database.types.dataFeed" name="finalFeed"/>
+</structure>

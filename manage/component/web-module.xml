@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <webModule>
+    <path>/data</path>
     <webFragments>nabu.frameworks.dataFeed.component</webFragments>
-    <webFragments>nabu.frameworks.dataFeed.crud.dataFeed</webFragments>
+    <webFragments>nabu.frameworks.dataFeed.manage.dataFeed.list</webFragments>
     <webFragments>nabu.frameworks.dataFeed.crud.dataFeedInstance</webFragments>
     <webFragments>nabu.frameworks.dataFeed.crud.dataPoint</webFragments>
+    <webFragments>nabu.frameworks.dataFeed.manage.dataFeed.merge</webFragments>
+    <webFragments>nabu.frameworks.dataFeed.crud.dataFeed.services.create</webFragments>
     <audience>MANAGER</audience>
 </webModule>

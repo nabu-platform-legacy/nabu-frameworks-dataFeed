@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<node artifactManager="be.nabu.eai.module.rest.provider.RESTServiceManager" created="2023-07-03T09:53:34.808+02:00" lastModified="2023-07-03T09:58:48.132+02:00" leaf="true" version="10">
+    <environmentId>apollo</environmentId>
+    <hidden>false</hidden>
+    <locked>false</locked>
+    <properties/>
+    <references>nabu.frameworks.dataFeed.rest.feed.dataFeedList</references>
+    <references>nabu.utils.types.ParameterDescription</references>
+    <references>nabu.frameworks.dataFeed.crud.dataFeed.services.list</references>
+    <references>nabu.utils.reflection.Type.describe</references>
+</node>

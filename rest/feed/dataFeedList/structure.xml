@@ -1,0 +1,4 @@
+<structure name="dataFeedList">
+    <structure definition="nabu.frameworks.dataFeed.rest.feed.dataFeed" maxOccurs="unbounded" minOccurs="0" name="results"/>
+    <structure definition="be.nabu.eai.module.services.crud.Page" minOccurs="0" name="page"/>
+</structure>

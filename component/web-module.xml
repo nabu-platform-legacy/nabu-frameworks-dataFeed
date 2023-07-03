@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <webModule>
-    <webFragments>nabu.frameworks.dataFeed.crud.dataFeed.services.list</webFragments>
+    <webFragments>nabu.frameworks.dataFeed.rest.feed.list</webFragments>
     <webFragments>nabu.frameworks.dataFeed.rest.feed.data</webFragments>
     <audience>CUSTOMER</audience>
 </webModule>

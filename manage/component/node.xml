@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<node artifactManager="be.nabu.eai.module.web.component.WebComponentManager" created="2023-07-03T08:53:29.801+02:00" lastModified="2023-07-03T09:31:18.074+02:00" leaf="true" version="5">
+<node artifactManager="be.nabu.eai.module.web.component.WebComponentManager" created="2023-07-03T08:53:29.801+02:00" lastModified="2023-07-03T11:56:56.545+02:00" leaf="true" version="10">
     <environmentId>apollo</environmentId>
     <hidden>false</hidden>
     <locked>false</locked>
     <properties/>
     <references>nabu.frameworks.dataFeed.component</references>
-    <references>nabu.frameworks.dataFeed.crud.dataFeed</references>
+    <references>nabu.frameworks.dataFeed.manage.dataFeed.list</references>
     <references>nabu.frameworks.dataFeed.crud.dataFeedInstance</references>
     <references>nabu.frameworks.dataFeed.crud.dataPoint</references>
+    <references>nabu.frameworks.dataFeed.manage.dataFeed.merge</references>
+    <references>nabu.frameworks.dataFeed.crud.dataFeed.services.create</references>
+    <tags>Data Feed</tags>
 </node>
