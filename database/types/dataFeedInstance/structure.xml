@@ -1,0 +1,8 @@
+<structure collectionName="dataFeedInstances" name="dataFeedInstance">
+    <field name="id" pattern="[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}|[0-9a-fA-F]{32}" primaryKey="true" type="java.util.UUID"/>
+    <field foreignKey="nabu.frameworks.dataFeed.database.types.dataFeed:id" name="dataFeedId" pattern="[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}|[0-9a-fA-F]{32}" type="java.util.UUID"/>
+    <field comment="When the calculation started, we &quot;open&quot; the feed for new data" name="started" timezone="UTC" type="java.util.Date"/>
+    <field comment="When the feed no longer accepts new data points. Some live feeds can have data pushed to them which should end up in the frontend." minOccurs="0" name="stopped" timezone="UTC" type="java.util.Date"/>
+    <field comment="Whether this instance is active or not. Error instances are inactive by default but the user can also deactivate a calculation" name="active" type="java.lang.Boolean"/>
+    <field comment="If we couldn't calculate it" minOccurs="0" name="error" type="java.lang.String"/>
+</structure>

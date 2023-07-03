@@ -1,0 +1,8 @@
+<structure comment="Can describe the data type for a given feed&#10;The implementation of this service should have an annotation that points to the feed provider&#10;It should also have the same properties object as the feed provider it is linked to" name="pipeline">
+    <structure name="input">
+        <structure definition="java.lang.Object" minOccurs="0" name="properties"/>
+    </structure>
+    <structure name="output">
+        <field minOccurs="0" name="dataType" type="java.lang.String"/>
+    </structure>
+</structure>

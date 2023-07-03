@@ -1,0 +1,13 @@
+<structure name="pipeline">
+    <structure name="input">
+        <field name="dataFeedId" pattern="[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}|[0-9a-fA-F]{32}" type="java.util.UUID"/>
+    </structure>
+    <structure name="output">
+        <structure definition="java.lang.Object" maxOccurs="unbounded" minOccurs="0" name="dataPoints"/>
+        <field minOccurs="0" name="started" type="java.util.Date"/>
+        <field minOccurs="0" name="stopped" type="java.util.Date"/>
+    </structure>
+    <structure collectionName="dataFeeds" definition="nabu.frameworks.dataFeed.crud.dataFeed.types.output" name="feed"/>
+    <structure collectionName="dataFeedInstances" definition="nabu.frameworks.dataFeed.crud.dataFeedInstance.types.output" minOccurs="0" name="active"/>
+    <structure collectionName="dataPoints" definition="nabu.frameworks.dataFeed.crud.dataPoint.types.output" maxOccurs="unbounded" minOccurs="0" name="dataPoints"/>
+</structure>

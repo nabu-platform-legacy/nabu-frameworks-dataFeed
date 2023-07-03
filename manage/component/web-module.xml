@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<webModule>
+    <webFragments>nabu.frameworks.dataFeed.component</webFragments>
+    <webFragments>nabu.frameworks.dataFeed.crud.dataFeed</webFragments>
+    <webFragments>nabu.frameworks.dataFeed.crud.dataFeedInstance</webFragments>
+    <webFragments>nabu.frameworks.dataFeed.crud.dataPoint</webFragments>
+    <audience>MANAGER</audience>
+</webModule>

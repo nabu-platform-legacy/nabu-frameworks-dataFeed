@@ -1,0 +1,20 @@
+<structure collectionName="dataFeeds" name="dataFeed">
+    <field name="id" pattern="[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}|[0-9a-fA-F]{32}" primaryKey="true" type="java.util.UUID"/>
+    <field name="name" type="java.lang.String"/>
+    <field comment="You can group data feeds together for combined display" minOccurs="0" name="groupName" type="java.lang.String"/>
+    <field comment="&quot;point&quot;, &quot;series&quot;, &quot;matrix&quot;,.." name="type" type="java.lang.String"/>
+    <field comment="Service that implements a spec depending on the type" minOccurs="0" name="dataProviderId" type="java.lang.String"/>
+    <field comment="The data type of this feed" minOccurs="0" name="dataType" type="java.lang.String"/>
+    <field comment="If you want to store the data instead of calculating it realtime, set a refresh interval" minOccurs="0" name="refreshInterval" type="be.nabu.libs.types.base.Duration"/>
+    <field comment="For series and matrices, it can be relevant to order the result set" minOccurs="0" name="orderBy" type="java.lang.String"/>
+    <field comment="For matrices, you can set a grouping key" minOccurs="0" name="groupBy" type="java.lang.String"/>
+    <field comment="The input to give the data provider" minOccurs="0" name="dataProviderInput" type="java.lang.String"/>
+    <field comment="The field to use as a label if relevant" minOccurs="0" name="labelField" type="java.lang.String"/>
+    <field comment="Based on the data type of the label, we can format it" minOccurs="0" name="labelFormat" type="java.lang.String"/>
+    <field comment="The field to use as a value if relevant" minOccurs="0" name="valueField" type="java.lang.String"/>
+    <field comment="Based on the type of the value field, we can format it" minOccurs="0" name="valueFormat" type="java.lang.String"/>
+    <field comment="If it is a time series, we can set a normalization interval to enrich with missing points" minOccurs="0" name="timeSeriesNormalization" type="be.nabu.libs.types.base.Duration"/>
+    <field comment="Can be used to indicate priority of the data feed, especially relevant when combined with grouping" name="priority" type="java.lang.Long"/>
+    <field comment="You can disable a datafeed without removing it" name="enabled" type="java.lang.Boolean"/>
+    <field minOccurs="0" name="description" type="java.lang.String"/>
+</structure>

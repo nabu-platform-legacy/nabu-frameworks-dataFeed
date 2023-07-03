@@ -1,0 +1,5 @@
+<structure name="dataPoint">
+    <structure definition="java.lang.Object" maxOccurs="unbounded" minOccurs="0" name="dataPoints"/>
+    <field minOccurs="0" name="started" type="java.util.Date"/>
+    <field minOccurs="0" name="stopped" type="java.util.Date"/>
+</structure>

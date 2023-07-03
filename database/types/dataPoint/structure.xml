@@ -1,0 +1,7 @@
+<structure collectionName="dataPoints" name="dataPoint">
+    <field name="id" pattern="[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}|[0-9a-fA-F]{32}" primaryKey="true" type="java.util.UUID"/>
+    <field foreignKey="nabu.frameworks.dataFeed.database.types.dataFeedInstance:id" name="dataFeedInstanceId" pattern="[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}|[0-9a-fA-F]{32}" type="java.util.UUID"/>
+    <field comment="Relevant for series and matrices" minOccurs="0" name="x" type="java.lang.Long"/>
+    <field comment="Relevant for matrices" minOccurs="0" name="y" type="java.lang.Long"/>
+    <field comment="The data, stringified as JSON" name="data" type="java.lang.String"/>
+</structure>

@@ -1,0 +1,58 @@
+<sequence xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		disabled="false"
+		id="ce20aadffb2a4634b333ca1e05d7a9e5"
+		lineNumber="1">
+	<steps xsi:type="be.nabu.libs.services.vm.step.Map"
+			disabled="false"
+			id="68ee7c18398d48fcbec67811b1b2c49a"
+			lineNumber="2">
+		<steps xsi:type="be.nabu.libs.services.vm.step.Invoke"
+				disabled="false"
+				id="4ef6765e9eb64ae7b91817423918d318"
+				serviceId="nabu.frameworks.dataFeed.services.feed.get"
+				resultName="result69213db1bcd340928905bac1af1fcedc"
+				temporaryMapping="true"
+				x="155"
+				y="85"
+				invocationOrder="0"
+				asynchronous="false"
+				recache="false">
+			<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+					disabled="false"
+					id="43d1ee2bd5ad40c8a3d3c73262383234"
+					mask="false"
+					optional="false"
+					fixedValue="false">
+				<from>input/path/dataFeedId</from>
+				<to>dataFeedId</to>
+			</steps>
+		</steps>
+		<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+				disabled="false"
+				id="0c52c79ebc564ca89d993c01611f39ac"
+				mask="false"
+				optional="false"
+				fixedValue="false">
+			<from>result69213db1bcd340928905bac1af1fcedc/dataPoints</from>
+			<to>output/content/dataPoints</to>
+		</steps>
+		<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+				disabled="false"
+				id="e5674516a41e44ee95e6ffd00aa1288b"
+				mask="false"
+				optional="false"
+				fixedValue="false">
+			<from>result69213db1bcd340928905bac1af1fcedc/started</from>
+			<to>output/content/started</to>
+		</steps>
+		<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+				disabled="false"
+				id="383ba332aa3f44e7a44f815546366afc"
+				mask="false"
+				optional="false"
+				fixedValue="false">
+			<from>result69213db1bcd340928905bac1af1fcedc/stopped</from>
+			<to>output/content/stopped</to>
+		</steps>
+	</steps>
+</sequence>

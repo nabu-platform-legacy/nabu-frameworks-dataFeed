@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<dataModel>
+    <entries>
+        <synchronize>true</synchronize>
+        <type>nabu.frameworks.dataFeed.database.types.dataFeed</type>
+        <x>94</x>
+        <y>66</y>
+    </entries>
+    <entries>
+        <synchronize>true</synchronize>
+        <type>nabu.frameworks.dataFeed.database.types.dataPoint</type>
+        <x>886</x>
+        <y>283</y>
+    </entries>
+    <entries>
+        <synchronize>true</synchronize>
+        <type>nabu.frameworks.dataFeed.database.types.dataFeedInstance</type>
+        <x>544</x>
+        <y>25</y>
+    </entries>
+</dataModel>
